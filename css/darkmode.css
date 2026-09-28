@@ -1,0 +1,336 @@
+/*====================================================
+
+VOCES SIN BARRERAS
+DARK MODE
+
+====================================================*/
+
+/*==============================
+
+VARIABLES
+
+===============================*/
+
+body.dark{
+
+--background:#0F172A;
+
+--background-light:#1E293B;
+
+--gray-100:#111827;
+
+--gray-200:#1F2937;
+
+--gray-300:#374151;
+
+--gray-400:#4B5563;
+
+--gray-700:#CBD5E1;
+
+--gray-800:#E5E7EB;
+
+--gray-900:#F8FAFC;
+
+--text-color:#F8FAFC;
+
+--text-light:#CBD5E1;
+
+background:var(--background);
+
+color:var(--text-color);
+
+}
+
+/*==============================
+
+BODY
+
+===============================*/
+
+body.dark{
+
+background:#0F172A;
+
+color:#F8FAFC;
+
+}
+
+/*==============================
+
+HEADER
+
+===============================*/
+
+body.dark header{
+
+background:rgba(15,23,42,.95);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .logo h2{
+
+color:white;
+
+}
+
+body.dark .menu a{
+
+color:#F8FAFC;
+
+}
+
+body.dark .menu a:hover{
+
+color:var(--secondary);
+
+}
+
+/*==============================
+
+SECCIONES
+
+===============================*/
+
+body.dark .section-light{
+
+background:#111827;
+
+}
+
+body.dark .section{
+
+background:#0F172A;
+
+color:#F8FAFC;
+
+}
+
+body.dark .section-title p{
+
+color:#CBD5E1;
+
+}
+
+/*==============================
+
+CARDS
+
+===============================*/
+
+body.dark .card,
+
+body.dark .feature-card,
+
+body.dark .resource-card,
+
+body.dark .post-card,
+
+body.dark .testimonial,
+
+body.dark .partner,
+
+body.dark .video-card,
+
+body.dark .stat-card{
+
+background:#1E293B;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.45);
+
+}
+
+body.dark .card p,
+
+body.dark .resource-card p,
+
+body.dark .post-content p,
+
+body.dark .testimonial p,
+
+body.dark .stat-card p{
+
+color:#CBD5E1;
+
+}
+
+/*==============================
+
+BLOG
+
+===============================*/
+
+body.dark .blog-search{
+
+background:#1E293B;
+
+}
+
+body.dark .blog-search input{
+
+background:transparent;
+
+color:white;
+
+}
+
+body.dark .category{
+
+background:#374151;
+
+color:white;
+
+}
+
+body.dark .category:hover{
+
+background:var(--secondary);
+
+}
+
+/*==============================
+
+FORMULARIOS
+
+===============================*/
+
+body.dark input,
+
+body.dark textarea{
+
+background:#1F2937;
+
+color:white;
+
+border:1px solid #374151;
+
+}
+
+body.dark input::placeholder,
+
+body.dark textarea::placeholder{
+
+color:#CBD5E1;
+
+}
+
+/*==============================
+
+NEWSLETTER
+
+===============================*/
+
+body.dark .newsletter{
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#1E3A8A,
+
+#0F766E
+
+);
+
+}
+
+/*==============================
+
+FOOTER
+
+===============================*/
+
+body.dark footer{
+
+background:#020617;
+
+}
+
+body.dark footer a{
+
+color:#CBD5E1;
+
+}
+
+body.dark footer a:hover{
+
+color:var(--secondary);
+
+}
+
+/*==============================
+
+SCROLLBAR
+
+===============================*/
+
+body.dark::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+body.dark::-webkit-scrollbar-track{
+
+background:#111827;
+
+}
+
+body.dark::-webkit-scrollbar-thumb{
+
+background:#475569;
+
+border-radius:20px;
+
+}
+
+body.dark::-webkit-scrollbar-thumb:hover{
+
+background:var(--secondary);
+
+}
+
+/*==============================
+
+TRANSICIONES
+
+===============================*/
+
+body,
+
+header,
+
+section,
+
+.card,
+
+.post-card,
+
+.resource-card,
+
+.video-card,
+
+.partner,
+
+.testimonial,
+
+.stat-card,
+
+footer{
+
+transition:
+
+background .4s ease,
+
+color .4s ease,
+
+border .4s ease,
+
+box-shadow .4s ease;
+
+}
