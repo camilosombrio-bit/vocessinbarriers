@@ -25,10 +25,10 @@
         content="Voces Sin Barreras">
 
     <meta property="og:description"
-        content="Proyecto web sobre inclusiónputoelquelolea y accesibilidad para la comunidad sorda.">
+        content="Proyecto web sobre inclusión y accesibilidad para la comunidad sorda.">
 
     <meta property="og:image"
-        content="assets/banner/banner.jpg">
+        content="assets/images/inclusion.jpg">
 
     <meta property="og:type"
         content="website">
@@ -330,7 +330,7 @@ Conocer más
 
 <div class="about-image">
 
-<img src="assets/banner/banner.jpg"
+<img src="assets/images/inclusion.jpg"
 alt="Inclusión">
 
 </div>
@@ -489,7 +489,7 @@ alt="Inclusión">
             <div class="image-box">
 
                 <img
-                    src="assets/posts/lsc.jpg"
+                    src="assets/images/lengua_senas_colombiana.jpeg"
                     alt="Lengua de Señas Colombiana">
 
             </div>
@@ -1333,42 +1333,42 @@ aprendizaje y trabajo colaborativo.
 
 <div class="gallery-item">
 
-<img src="assets/gallery/img1.jpg"
+<img src="assets/images/inclusion.jpg"
 alt="Imagen 1">
 
 </div>
 
 <div class="gallery-item">
 
-<img src="assets/gallery/img2.jpg"
+<img src="assets/images/lengua_senas_colombiana.jpeg"
 alt="Imagen 2">
 
 </div>
 
 <div class="gallery-item">
 
-<img src="assets/gallery/img3.jpg"
+<img src="assets/posts/destacado.jpg"
 alt="Imagen 3">
 
 </div>
 
 <div class="gallery-item">
 
-<img src="assets/gallery/img4.jpg"
+<img src="assets/images/lengua_senas_colombiana.jpeg"
 alt="Imagen 4">
 
 </div>
 
 <div class="gallery-item">
 
-<img src="assets/gallery/img5.jpg"
+<img src="assets/images/inclusion.jpg"
 alt="Imagen 5">
 
 </div>
 
 <div class="gallery-item">
 
-<img src="assets/gallery/img6.jpg"
+<img src="assets/posts/destacado.jpg"
 alt="Imagen 6">
 
 </div>
@@ -1408,7 +1408,7 @@ Lo que opinan nuestros visitantes
 <div class="testimonial">
 
 <img
-src="assets/gallery/persona1.jpg"
+src="assets/images/lengua_senas_colombiana.jpeg"
 alt="Usuario">
 
 <h3>
@@ -1430,7 +1430,7 @@ de la inclusión."
 <div class="testimonial">
 
 <img
-src="assets/gallery/persona2.jpg"
+src="assets/images/inclusion.jpg"
 alt="Usuario">
 
 <h3>
@@ -1451,7 +1451,7 @@ la tecnología puede apoyar procesos inclusivos."
 <div class="testimonial">
 
 <img
-src="assets/gallery/persona3.jpg"
+src="assets/posts/destacado.jpg"
 alt="Usuario">
 
 <h3>
@@ -1503,28 +1503,28 @@ Instituciones comprometidas
 
 <div class="partner">
 
-<img src="assets/icons/sena.png"
+<img src="assets/logo/logo.png"
 alt="SENA">
 
 </div>
 
 <div class="partner">
 
-<img src="assets/icons/lsc.png"
+<img src="assets/images/lengua_senas_colombiana.jpeg"
 alt="LSC">
 
 </div>
 
 <div class="partner">
 
-<img src="assets/icons/comunidad.png"
+<img src="assets/images/inclusion.jpg"
 alt="Comunidad">
 
 </div>
 
 <div class="partner">
 
-<img src="assets/icons/inclusion.png"
+<img src="assets/images/inclusion.jpg"
 alt="Inclusión">
 
 </div>
@@ -1614,52 +1614,48 @@ Suscribirme
             name="contacto"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/?mensaje-enviado=true"
             class="contact-form">
 
-            <input
-                type="hidden"
-                name="form-name"
-                value="contacto">
+            <input type="hidden" name="form-name" value="contacto">
+
+            <p hidden>
+                <label>No rellenes este campo: <input name="bot-field"></label>
+            </p>
 
             <div class="input-group">
 
-                <label>
-
-                    Nombre
-
-                </label>
+                <label for="contacto-nombre">Nombre</label>
 
                 <input
+                    id="contacto-nombre"
                     type="text"
                     name="nombre"
+                    autocomplete="name"
                     required>
 
             </div>
 
             <div class="input-group">
 
-                <label>
-
-                    Correo electrónico
-
-                </label>
+                <label for="contacto-correo">Correo electrónico</label>
 
                 <input
+                    id="contacto-correo"
                     type="email"
                     name="correo"
+                    autocomplete="email"
                     required>
 
             </div>
 
             <div class="input-group">
 
-                <label>
-
-                    Asunto
-
-                </label>
+                <label for="contacto-asunto">Asunto</label>
 
                 <input
+                    id="contacto-asunto"
                     type="text"
                     name="asunto">
 
@@ -1667,13 +1663,10 @@ Suscribirme
 
             <div class="input-group">
 
-                <label>
-
-                    Mensaje
-
-                </label>
+                <label for="contacto-mensaje">Mensaje</label>
 
                 <textarea
+                    id="contacto-mensaje"
                     name="mensaje"
                     rows="6"
                     required>
